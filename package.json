@@ -4,7 +4,8 @@
   "main": "dist/algorithm.test.js",
   "scripts": {
     "build": "tsc",
-    "test": "node dist/algorithm.test.js"
+    "test": "npm run build && node dist/tests/algorithm.test.js",
+    "test:all": "npm run build && node dist/tests/algorithm.test.js && node dist/tests/performance.test.js && node dist/tests/integration.test.js"
   },
   "devDependencies": {
     "typescript": "^5.0.0"
