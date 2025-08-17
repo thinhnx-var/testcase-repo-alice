@@ -1,9 +1,12 @@
 {
   "name": "testcase-repo-alice",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "dist/algorithm.test.js",
   "scripts": {
-    "test": "node tests/algorithm.test.js"
+    "build": "tsc",
+    "test": "node dist/algorithm.test.js"
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "typescript": "^5.0.0"
+  }
 }
